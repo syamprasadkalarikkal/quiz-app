@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { questions } from '../data/questions';
-import { saveHistory } from '@/lib/history';
 
 
 export default function Quiz() {
@@ -11,9 +10,7 @@ export default function Quiz() {
   const [timer, setTimer] = useState(300); 
   const [quizEnded, setQuizEnded] = useState(false);
   const [score, setScore] = useState(0);
-  const [userName, setUserName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [userPhone, setUserPhone] = useState('');
+  
 
 
   const formatTime = (time:number) => {

@@ -40,7 +40,7 @@ export default function HistoryPage() {
       <div className="mb-4">
         <button
           onClick={handleDeleteAll}
-          className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors">
+          className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors">
           Delete All History
         </button>
       </div>
@@ -64,7 +64,7 @@ export default function HistoryPage() {
 
               <button
                 onClick={() => handleDelete(index)}
-                className="mt-4 bg-red-600 text-white py-1 px-4 rounded-md hover:bg-red-700 transition-colors">
+                className="mt-4 bg-green-600 text-white py-1 px-4 rounded-md hover:bg-red-700 transition-colors">
                 Delete Attempt
               </button>
             </div>
